@@ -2,6 +2,7 @@
 date: 2023-01-01
 title: 'HTML Gets an Upgrade: The Latest Updates You Need to Know'
 category: Document
+author: Robot Editor
 tags: html, web development
 ---
 

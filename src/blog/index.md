@@ -2,5 +2,5 @@
 layout: home
 ---
 
-<CustomBlogHeader />
 <VPBHome />
+

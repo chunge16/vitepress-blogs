@@ -2,6 +2,7 @@
 title: 5 Reasons Why You Should Be Using Vue in Your Web Development
 author: AI Writer
 date: 2022-11-01
+category: Document
 tags:
   - vue
   - javascript
