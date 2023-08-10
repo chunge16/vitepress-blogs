@@ -1,0 +1,36 @@
+{
+  "name": "vitepress-blog-init",
+  "version": "0.0.1",
+  "type": "module",
+  "homepage": "https://github.com/jcamp-code/starter-vitepress-blog",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcamp-code/starter-vitepress-blog.git"
+  },
+  "devDependencies": {
+    "@jcamp/vitepress-blog-theme": "0.3.0",
+    "vitepress": "1.0.0-alpha.74",
+    "vue": "^3.2.47"
+  },
+  "scripts": {
+    "dev": "vitepress dev src",
+    "build": "vitepress build src",
+    "preview": "vitepress preview src"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search"
+      ],
+      "allowedVersions": {
+        "typescript": "5"
+      }
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "tailwindcss": {},
+      "autoprefixer": {}
+    }
+  }
+}
