@@ -1,6 +1,7 @@
 import { defineConfig } from '@jcamp/vitepress-blog-theme/config';
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/vitepress-blogs/',
   title: '春哥的博客',
   description: '行到水穷处，坐看云起时',
   themeConfig: {
