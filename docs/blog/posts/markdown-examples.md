@@ -1,3 +1,11 @@
+---
+date: 2023-08-01
+title: 'Markdown Extension Examples'
+author: Robot Editor
+category: Tutorial
+tags:
+  - vue
+---
 # Markdown Extension Examples
 
 This page demonstrates some of the built-in markdown extensions provided by VitePress.

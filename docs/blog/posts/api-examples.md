@@ -1,5 +1,13 @@
 ---
 outline: deep
+date: 2022-12-01
+title: 'API Examples'
+author: Robot Editor
+category: Tutorial
+tags:
+  - vue
+  - web development
+
 ---
 
 # Runtime API Examples

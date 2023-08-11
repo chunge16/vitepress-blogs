@@ -2,5 +2,4 @@
 layout: home
 ---
 
-<VPBHome />
-
+<Archives/>
