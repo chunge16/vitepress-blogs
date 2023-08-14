@@ -1,6 +1,5 @@
 
 import { data as posts } from './posts.data.js'
-console.log('posts', posts);
 
 export function useArchives() {
     const postsByYear = [];

@@ -1,5 +1,5 @@
 ---
-title: 标签
+layout: home
 ---
 
-# 标签
+<VPBTags />
