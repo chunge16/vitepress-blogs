@@ -1,6 +1,6 @@
 import {  createContentLoader } from 'vitepress'
 import { formatDistance } from 'date-fns';
-import Config from '../../config.mjs';
+import Config from '../../config.js';
 const pattern = '/blog/posts/**/*.md';
 
 const blogConfig = Config.themeConfig?.blog;

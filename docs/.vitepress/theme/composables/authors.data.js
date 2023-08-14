@@ -1,5 +1,5 @@
 import { createContentLoader } from 'vitepress'
-import Config from "../../config.mjs";
+import Config from "../../config.js";
 
 const blogConfig = Config.themeConfig?.blog;
 

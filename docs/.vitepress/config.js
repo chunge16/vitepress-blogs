@@ -36,30 +36,22 @@ export default defineConfig({
       },
     ],
     blog: {
-      title: 'My AI Written Blog',
+      title: 'Blog',
       description: 'All these articles were written by AI!',
-      defaultAuthor: 'AI Writer',
+      defaultAuthor: 'chunge',
       categoryIcons: {
         article: 'i-[carbon/notebook]',
         tutorial: 'i-[carbon/book]',
         document: 'i-[carbon/document]',
       },
       tagIcons: {
-        github: 'i-[logos/github-icon]',
+        github: 'i-[carbon/logo-github]',
         vue: 'i-[logos/vue]',
+        javascript: 'i-[logos/javascript]',
+        'web development': 'i-[carbon/development]',
+        html: 'i-[logos-html-5]'
       },
     },
-
-    // sidebar: [
-    //   {
-    //     text: 'Examples',
-    //     items: [
-    //       { text: 'Markdown Examples', link: '/posts/markdown-examples' },
-    //       { text: 'Runtime API Examples', link: '/posts/api-examples' }
-    //     ]
-    //   }
-    // ],
-
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]

@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { useData } from 'vitepress'
-import type { VPBThemeConfig } from '../theme-types'
 
 defineProps<{
   category: string
 }>()
-const { theme } = useData<VPBThemeConfig>()
+const { theme } = useData()
+console.log('theme', theme.blog?.categoryIcons);
 </script>
 
 <template>

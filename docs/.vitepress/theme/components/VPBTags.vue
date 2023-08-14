@@ -1,14 +1,13 @@
-<script setup lang="ts">
+<script setup>
 import { inBrowser, useData, withBase } from 'vitepress'
 import { ref } from 'vue'
-import { useTags } from '../composables/useTags'
+import { useTags } from '../composables/useTags.js'
 import VPBTagIcon from './VPBTagIcon.vue'
 
 const { postsByTag } = useTags()
 const { theme } = useData()
 const selectedTag = ref('')
-
-function toggleTag(tag: string) {
+function toggleTag(tag) {
   selectedTag.value = tag
 }
 if (inBrowser) {

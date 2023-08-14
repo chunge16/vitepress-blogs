@@ -1,11 +1,13 @@
-<script setup lang="ts">
+<script setup>
+defineProps({
+    tag: String,
+})
 import { useData } from 'vitepress'
-import type { VPBThemeConfig } from '../theme-types'
 
-defineProps<{
-  tag: string
-}>()
-const { theme } = useData<VPBThemeConfig>()
+const { theme } = useData()
+
+console.log("theme", theme?.blog)
+
 </script>
 
 <template>
