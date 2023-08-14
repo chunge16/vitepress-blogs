@@ -5,6 +5,9 @@ export default defineConfig({
   base: "/vitepress-blogs/",
   title: "春哥的博客",
   description: "行到水穷处，坐看云起时",
+  head: [
+    ['link', { rel: 'icon', href: '/cat-with-wry-smile.svg' }],
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -49,7 +52,8 @@ export default defineConfig({
         vue: 'i-[logos/vue]',
         javascript: 'i-[logos/javascript]',
         'web development': 'i-[carbon/development]',
-        html: 'i-[logos-html-5]'
+        html: 'i-[logos/html-5]',
+        git: 'i-[logos/git-icon]'
       },
     },
     socialLinks: [

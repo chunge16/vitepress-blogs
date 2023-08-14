@@ -1,7 +1,7 @@
 ---
 name: chunge
-avatar: /cat-with-wry-smile.svg
----
+avatar: /vitepress-blogs/cat-with-wry-smile.svg
+-----------------------------------------------
 
 ## chunge
 
