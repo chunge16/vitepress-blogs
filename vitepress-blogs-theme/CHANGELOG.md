@@ -1,6 +1,10 @@
 # Changelog
 
 
+## v0.1.7
+
+[compare changes](https://github.com/chunge16/vitepress-blogs/compare/v0.1.6...v0.1.7)
+
 ## v0.1.6
 
 [compare changes](https://github.com/chunge16/vitepress-blogs/compare/v0.1.4...v0.1.6)
