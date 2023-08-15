@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.8
+
+[compare changes](https://github.com/chunge16/vitepress-blogs/compare/v0.1.7...v0.1.8)
+
+### 🚀 Enhancements
+
+- ✨  新增REDMME ([9c7da3f](https://github.com/chunge16/vitepress-blogs/commit/9c7da3f))
+
+### ❤️  Contributors
+
+- Chunge <1362598656@qq.com>
+
 ## v0.1.7
 
 [compare changes](https://github.com/chunge16/vitepress-blogs/compare/v0.1.6...v0.1.7)
