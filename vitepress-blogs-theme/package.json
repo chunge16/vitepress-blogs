@@ -1,12 +1,13 @@
 {
   "name": "@chunge16/vitepress-blogs-theme",
-  "version": "0.1.4",
-  "description": "",
+  "type": "module",
+  "description": "VitePress easy to use blog theme",
+  "version": "0.1.5",
   "main": "theme/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "changelogen --release --push && pnpm -r publish --access public",
-    "release:minor": "changelogen --release --minor --push && pnpm  publish --access public",
+    "release": "changelogen --release --push && pnpm publish --access public",
+    "release:minor": "changelogen --release --minor --push && pnpm publish --access public",
     "release:major": "changelogen --release --major --push && pnpm publish --access public",
     "release:patch": "changelogen --release --patch --push && pnpm publish --access public"
   },
@@ -25,13 +26,14 @@
     "blog"
   ],
   "exports": {
-    ".": "./index.js",
-    "./config": "./dist/config/index.js",
+    ".": "./theme/index.js",
+    "./config": "./config/index.js",
     "./package.json": "./package.json"
   },
+
   "files": [
-    "src",
-    "dist"
+    "config",
+    "theme"
   ],
   "devDependencies": {
     "@jcamp/tailwindcss-plugin-icons": "^0.6.2",
