@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.6
+
+[compare changes](https://github.com/chunge16/vitepress-blogs/compare/v0.1.4...v0.1.6)
+
+### 📦 Build
+
+- 🔧  修改pkg ([315df48](https://github.com/chunge16/vitepress-blogs/commit/315df48))
+
+### ❤️  Contributors
+
+- Chunge <1362598656@qq.com>
+
 ## v0.1.4
 
 [compare changes](https://github.com/chunge16/vitepress-blogs/compare/v0.1.3...v0.1.4)
