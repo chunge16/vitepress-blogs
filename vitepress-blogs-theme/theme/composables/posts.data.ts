@@ -1,5 +1,6 @@
 import { type SiteConfig, createContentLoader} from 'vitepress'
-import { formatDistance } from 'date-fns';
+import { formatDistance, format } from 'date-fns';
+import { zhCN } from 'date-fns/locale'
 
 const config: SiteConfig = (globalThis as any).VITEPRESS_CONFIG
 const blogConfig = config.site.themeConfig.blog
@@ -46,10 +47,8 @@ function formatDate(raw) {
     return {
         raw: date.toISOString().split('T')[0],
         time: +date,
-        formatted: date.toLocaleDateString('en-US', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
+        formatted: format(date, 'PPP', {
+            locale: zhCN
         }),
         since: formatDistance(date, new Date(), { addSuffix: true }),
     }
