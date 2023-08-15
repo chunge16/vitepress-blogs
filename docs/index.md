@@ -3,7 +3,8 @@
 layout: home
 hero:
   name: 春哥的博客
-  text: 行到水穷处，坐看云起时.
+  text: 行到水穷处，坐看云起时
+  tagline: 开拓视野，冲破艰险，洞悉所有，贴近生活，寻找真爱，感受彼此， 这就是人生的目的
   image:
     src: /cat-with-wry-smile.svg
     alt: cat-with-wry-smile
@@ -16,7 +17,4 @@ hero:
       link: /blog/authors/chunge
 ---
 
-<script setup>
-import Home from "./.vitepress/theme/components/home.vue";
-</script>
 

@@ -3,12 +3,14 @@ import {processData} from '../../vitepress-blogs-theme/config/index.js'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/vitepress-blogs/",
+  cleanUrls: true,
   title: "春哥的博客",
   description: "行到水穷处，坐看云起时",
   head: [
     ['link', { rel: 'icon', href: '/cat-with-wry-smile.svg' }],
   ],
   themeConfig: {
+    logo: '/cat-with-wry-smile.svg',
     lastUpdated: true,
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -68,7 +70,16 @@ export default defineConfig({
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    ],
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2023-present chunge'
+    }
+  },
+  vite: {
+    optimizeDeps: {
+      exclude: ['@chunge16/vitepress-blogs-theme'],
+    },
   },
   async transformPageData(pageData, ctx) {
     await processData(pageData, ctx)

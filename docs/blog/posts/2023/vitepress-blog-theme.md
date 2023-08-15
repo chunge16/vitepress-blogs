@@ -13,7 +13,7 @@ tags: vite, vue
 # @chunge16/vitepress-blogs-theme
 
 ## 使用主题
-自定义主题是基于[vitepress官方自定义主题的配置](https://vitepress.dev/guide/custom-theme#distributing-a-custom-theme)来设置的
+自定义主题是参考学习[@jcamp/vitepress-blog-theme](https://vitepressblog.dev/)，但配置方式优化为[vitepress官方自定义主题的配置](https://vitepress.dev/guide/custom-theme#distributing-a-custom-theme)来设置的
 
 ```sh [npm]
 $ npm install -D @chunge16/vitepress-blogs-theme
@@ -33,8 +33,6 @@ import { VPBTheme } from '@chunge16/vitepress-blogs-theme'
 
 export default VPBTheme
 
-
-
 ```
 
 如果主题需要扩展：
@@ -50,6 +48,22 @@ export default {
   }
 }
 ```
+
+> 特殊提示，需要添加vite配置，为`@chunge16/vitepress-blogs-theme`跳过不必要的pre-bundled阶段，使用optimizeDeps.exclude，否则会提示导出错误
+
+```javascript
+// .vitepress/config.js 
+
+export default {
+    vite: {
+        optimizeDeps: {
+            exclude: ['@chunge16/vitepress-blogs-theme']
+        }
+    }
+}
+```
+
+
 ## 主题配置
 
 因为本主题集学习参考[@jcamp/vitepress-blog-theme](https://vitepressblog.dev/reference/config)，所以主题配置基本可参考该主题的配置说明
@@ -92,9 +106,7 @@ VitePress 博客使用[tailwind-css-icons](https://github.com/jcamp-code/tailwin
 
 ```
 
-
-
-## 说明
+## 说明 :bug:
 [@jcamp/vitepress-blog-theme](https://vitepressblog.dev/)主题有个bug，`.vitepress/config.js`中设置`base`地址，会导致博客跳转地址错误，导致404
 
 后面看源码发现，是因为作者在组件跳转地址加上 [withBase](https://vitepress.dev/reference/runtime-api#withbase) 函数，会导致`base`值URL重复，所以找不到地址
