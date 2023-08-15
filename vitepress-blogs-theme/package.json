@@ -1,0 +1,47 @@
+{
+  "name": "@chunge16/vitepress-blogs-theme",
+  "version": "0.1.0",
+  "description": "",
+  "main": "theme/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "changelogen --release --push && pnpm publish --access public",
+    "release:minor": "changelogen --release --minor --push && pnpm publish --access public",
+    "release:major": "changelogen --release --major --push && pnpm publish --access public",
+    "release:patch": "changelogen --release --patch --push && pnpm publish --access public"
+  },
+  "author": "chunge16 (https://github.com/chunge16)",
+  "license": "MIT",
+  "homepage": "https://github.com/chunge16/vitepress-blogs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chunge16/vitepress-blogs.git"
+  },
+  "keywords": [
+    "vite",
+    "vue",
+    "vitepress",
+    "theme",
+    "blog"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./config": "./dist/config/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "devDependencies": {
+    "@jcamp/tailwindcss-plugin-icons": "^0.6.2",
+    "changelogen": "^0.5.4",
+    "vitepress": "1.0.0-rc.4"
+  },
+  "postcss": {
+    "plugins": {
+      "tailwindcss": {},
+      "autoprefixer": {}
+    }
+  }
+}

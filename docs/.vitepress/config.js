@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress';
-
+import {processData} from '../../vitepress-blogs-theme/config/index.js'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/vitepress-blogs/",
@@ -9,9 +9,15 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/cat-with-wry-smile.svg' }],
   ],
   themeConfig: {
+    lastUpdated: true,
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
+      {
+        text: '随笔',
+        link: '/casualEssay/RollingStoneLoveStory',
+        activeMatch: '/casualEssay/',
+      },
       {
         text: 'Blog',
         activeMatch: '/blog/',
@@ -38,9 +44,12 @@ export default defineConfig({
         ],
       },
     ],
+    sidebar: {
+      '/casualEssay/': sidebarCasualEssay(),
+    },
     blog: {
       title: 'Blog',
-      description: 'All these articles were written by AI!',
+      description: 'All these articles were written by chunge!',
       defaultAuthor: 'chunge',
       categoryIcons: {
         article: 'i-[carbon/notebook]',
@@ -53,7 +62,8 @@ export default defineConfig({
         javascript: 'i-[logos/javascript]',
         'web development': 'i-[carbon/development]',
         html: 'i-[logos/html-5]',
-        git: 'i-[logos/git-icon]'
+        git: 'i-[logos/git-icon]',
+        vite: 'i-[logos/vitejs]'
       },
     },
     socialLinks: [
@@ -66,28 +76,17 @@ export default defineConfig({
 })
 
 
-async function processData(
-    pageData,
-    ctx,
-    aside = 'left',
-    sidebar = false
-) {
-  const config = ctx?.siteConfig?.site?.themeConfig;
-  const postsPattern = config.blog?.postsPath ?? 'blog/posts'
-  const authorsPattern = config.blog?.authorsPath ?? 'blog/authors'
-
-  if (pageData.relativePath.includes(postsPattern)) {
-    pageData.frontmatter.blog = 'post'
-    pageData.frontmatter.aside = aside
-    pageData.frontmatter.sidebar = sidebar
-    pageData.frontmatter.prev = false
-    pageData.frontmatter.next = false
-  }
-  if (pageData.relativePath.includes(authorsPattern)) {
-    pageData.frontmatter.blog = 'author'
-    pageData.frontmatter.aside = aside
-    pageData.frontmatter.sidebar = sidebar
-    pageData.frontmatter.prev = false
-    pageData.frontmatter.next = false
-  }
+function sidebarCasualEssay(){
+  return [
+    {
+      text: '滚石爱情故事集',
+      collapsed: false,
+      items: [
+        {
+          text: '滚石爱情故事',
+          link: '/casualEssay/RollingStoneLoveStory',
+        },
+      ],
+    },
+  ];
 }
