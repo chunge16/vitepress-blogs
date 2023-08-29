@@ -21,21 +21,21 @@ export default defineConfig({
         activeMatch: '/casualEssay/',
       },
       {
-        text: 'Blog',
+        text: '博客',
         activeMatch: '/blog/',
         items: [
           {
-            text: 'Blog Home',
+            text: '博客首页',
             link: '/blog/',
             activeMatch: '/blog/$',
           },
           {
-            text: 'Tags',
+            text: '标签',
             link: '/blog/tags',
             activeMatch: '/blog/tags',
           },
           {
-            text: 'Archives',
+            text: '档案',
             link: '/blog/archives',
             activeMatch: '/blog/archives',
           },

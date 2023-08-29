@@ -4,7 +4,8 @@
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@chunge16/vitepress-blogs-theme": "^0.1.7",
@@ -16,7 +17,8 @@
     "postcss": "^8.4.27",
     "tailwindcss": "^3.3.3",
     "vitepress": "1.0.0-rc.4",
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "husky": "^8.0.0"
   },
   "dependencies": {
     "@jcamp/tailwindcss-plugin-icons": "^0.6.2",
