@@ -43,7 +43,6 @@ function formatTags(raw) {
 
 function formatDate(raw) {
     const date = new Date(raw)
-    date.setUTCHours(24)
     return {
         raw: date.toISOString().split('T')[0],
         time: +date,
