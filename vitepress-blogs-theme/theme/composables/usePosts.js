@@ -8,7 +8,7 @@ export function usePosts() {
   const path = route.path
 
   function findCurrentIndex() {
-    const result = posts.findIndex((p) => p.url === route.path)
+    const result = posts.findIndex((p) => p.url === decodeURI(route.path))
     if (result === -1) console.error(`blog post missing: ${route.path}`)
     return result
   }
