@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.10
+
+[compare changes](https://github.com/chunge16/vitepress-blogs/compare/v0.1.9...v0.1.10)
+
+### 🩹 Fixes
+
+- 🐛  修复当文件名为非英文是，path路径错误的bug ([8804c25](https://github.com/chunge16/vitepress-blogs/commit/8804c25))
+
+### ❤️  Contributors
+
+- Chunge <1362598656@qq.com>
+
 ## v0.1.9
 
 [compare changes](https://github.com/chunge16/vitepress-blogs/compare/v0.1.8...v0.1.9)
