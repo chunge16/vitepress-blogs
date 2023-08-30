@@ -24,7 +24,7 @@ const path = theme.blog?.tagsPath ?? '/blog/tags'
         v-for="tagName in post.tags"
         :key="tagName"
         class="rounded-sm bg-gray-100 px-2 py-1 text-xs font-semibold text-gray-600"
-        :href="`${path}?init=${tagName}`"
+        :href="`${withBase(<string>path)}?init=${tagName}`"
       >
         <VPBTagIcon :tag="tagName" />
         {{ tagName }}
