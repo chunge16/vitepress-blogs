@@ -1,6 +1,31 @@
 # Changelog
 
 
+## v0.1.11
+
+[compare changes](https://github.com/chunge16/vitepress-blogs/compare/v0.1.10...v0.1.11)
+
+### 🚀 Enhancements
+
+- ✨  新增eslint规则 ([9581082](https://github.com/chunge16/vitepress-blogs/commit/9581082))
+
+### 🩹 Fixes
+
+- 🐛  修复点击标签名跳转地址错误 ([73b48f0](https://github.com/chunge16/vitepress-blogs/commit/73b48f0))
+- 🐛  更正项目GitHub地址 ([6953dc4](https://github.com/chunge16/vitepress-blogs/commit/6953dc4))
+
+### 📖 Documentation
+
+- 📝  新增前端规划指南博客 ([b789503](https://github.com/chunge16/vitepress-blogs/commit/b789503))
+
+### 📦 Build
+
+- 📦️  新增 commitlint 和 lint-staged 规则 ([244b93d](https://github.com/chunge16/vitepress-blogs/commit/244b93d))
+
+### ❤️  Contributors
+
+- Chunge <1362598656@qq.com>
+
 ## v0.1.10
 
 [compare changes](https://github.com/chunge16/vitepress-blogs/compare/v0.1.9...v0.1.10)
