@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { withBase } from 'vitepress'
-import { useAuthors } from '../composables/useAuthors'
+import { withBase } from 'vitepress';
+import { useAuthors } from '../composables/useAuthors';
 
-const { author, prevAuthor, nextAuthor } = useAuthors()
+const { author, prevAuthor, nextAuthor } = useAuthors();
 </script>
 
 <template>
@@ -32,17 +32,17 @@ const { author, prevAuthor, nextAuthor } = useAuthors()
         :href="prevAuthor.url"
         class="inline-flex items-center font-medium hover:text-[color:var(--vp-c-brand-dark)] dark:text-white"
       >
-        <div class="i-[bx/arrow-back] mr-2" />
+        <div class="i-[bx/arrow-back] mr-2" ></div>
         <span>Previous Author</span>
       </a>
-      <div v-if="!prevAuthor" />
+      <div v-if="!prevAuthor" ></div>
       <a
         v-if="nextAuthor"
         :href="nextAuthor.url"
         class="inline-flex items-center font-medium hover:text-[color:var(--vp-c-brand-dark)] dark:text-white"
       >
         <span>Next Author</span>
-        <div class="i-[bx/right-arrow-alt] ml-2" />
+        <div class="i-[bx/right-arrow-alt] ml-2" ></div>
       </a>
     </div>
   </div>

@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { useData } from 'vitepress'
-import { usePosts } from '../composables/usePosts'
-import VPBHomePost from './VPBHomePost.vue'
+import { useData } from 'vitepress';
+import { usePosts } from '../composables/usePosts';
+import VPBHomePost from './VPBHomePost.vue';
 
-const { posts } = usePosts()
+const { posts } = usePosts();
 
-const { theme } = useData()
+const { theme } = useData();
 </script>
 
 <template>

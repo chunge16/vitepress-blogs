@@ -1,12 +1,12 @@
 <script setup>
 defineProps({
     tag: String,
-})
-import { useData } from 'vitepress'
+});
+import { useData } from 'vitepress';
 
-const { theme } = useData()
+const { theme } = useData();
 
-console.log("theme", theme?.blog)
+console.log("theme", theme?.blog);
 
 </script>
 
@@ -15,5 +15,5 @@ console.log("theme", theme?.blog)
     v-if="theme.blog?.tagIcons && theme.blog.tagIcons[tag.toLowerCase()]"
     :class="theme.blog.tagIcons[tag.toLowerCase()]"
     class="mr-2"
-  />
+  ></div>
 </template>

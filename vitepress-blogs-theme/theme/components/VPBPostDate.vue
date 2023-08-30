@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { usePosts } from '../composables/usePosts'
-const { post } = usePosts()
+import { usePosts } from '../composables/usePosts';
+const { post } = usePosts();
 
 function getDateTime() {
-  return new Date(post.value.date.time).toISOString()
+  return new Date(post.value.date.time).toISOString();
 }
 </script>
 

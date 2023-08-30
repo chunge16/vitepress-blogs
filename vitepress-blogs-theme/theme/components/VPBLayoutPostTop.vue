@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { usePosts } from '../composables/usePosts'
-import VPBPostDate from './VPBPostDate.vue'
-import VPBPostDetails from './VPBPostDetails.vue'
+import { usePosts } from '../composables/usePosts';
+import VPBPostDate from './VPBPostDate.vue';
+import VPBPostDetails from './VPBPostDetails.vue';
 
-const { post } = usePosts()
+const { post } = usePosts();
 </script>
 
 <template>

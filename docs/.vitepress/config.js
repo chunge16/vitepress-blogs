@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress';
-import {processData} from '../../vitepress-blogs-theme/config/index.js'
+import {processData} from '../../vitepress-blogs-theme/config/index.js';
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/vitepress-blogs/",
@@ -82,9 +82,9 @@ export default defineConfig({
     },
   },
   async transformPageData(pageData, ctx) {
-    await processData(pageData, ctx)
+    await processData(pageData, ctx);
   },
-})
+});
 
 
 function sidebarCasualEssay(){

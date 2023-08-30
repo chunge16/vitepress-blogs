@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { useData, withBase } from 'vitepress'
-import { useArchives } from '../composables/useArchives'
+import { useData, withBase } from 'vitepress';
+import { useArchives } from '../composables/useArchives';
 
-const { postsByYear } = useArchives()
-const { theme } = useData()
+const { postsByYear } = useArchives();
+const { theme } = useData();
 </script>
 
 <template>
