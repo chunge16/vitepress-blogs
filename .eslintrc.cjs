@@ -10,11 +10,17 @@ module.exports = {
         "eslint:recommended",
         "plugin:vue/vue3-essential"
     ],
+    /**
+     *  https://eslint.nodejs.cn/docs/latest/use/configure/ignore
+     *  fix: ESLint 默认忽略 . 开头的目录（这些路径在 Linux 系统上表示隐藏目录，ignorePatterns 加上 !/docs/.vitepress/ ! 开头表示不排除
+     * **/
     "ignorePatterns": [
+        ".husky",
+        ".github",
         "vitepress-blogs-theme",
         "docs/.vitepress/dist",
         "docs/.vitepress/cache",
-        "!/docs/.vitepress" // fix: ESLint 默认忽略 . 开头的目录（这些路径在 Linux 系统上表示隐藏目录，ignorePatterns 加上 !/docs/.vitepress/ ! 开头表示不排除
+        "!/docs/.vitepress"
     ],
     "overrides": [
         {
@@ -65,4 +71,4 @@ module.exports = {
             },
         ],
     }
-}
+};
