@@ -69,7 +69,7 @@ export default defineConfig({
       },
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/chunge16/vitepress-blogs/tree/main/vitepress-blogs-theme' }
     ],
     footer: {
       message: 'Released under the MIT License.',
