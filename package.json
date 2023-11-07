@@ -29,7 +29,8 @@
   },
   "dependencies": {
     "@jcamp/tailwindcss-plugin-icons": "^0.6.2",
-    "date-fns": "^2.30.0"
+    "date-fns": "^2.30.0",
+    "vitepress-plugin-comment-with-giscus": "^1.1.9"
   },
   "lint-staged": {
     "*.{cjs,js,ts,vue}": [
