@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress';
+import { defineConfig,withBase } from 'vitepress';
 import {processData} from '../../vitepress-blogs-theme/config/index.js';
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -10,7 +10,7 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/cat-with-wry-smile.svg' }],
   ],
   themeConfig: {
-    logo: '/cat-with-wry-smile.svg',
+    logo: withBase('/cat-with-wry-smile.svg'),
     lastUpdated: true,
     // https://vitepress.dev/reference/default-theme-config
     nav: [
