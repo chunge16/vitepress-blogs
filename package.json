@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "@jcamp/tailwindcss-plugin-icons": "^0.6.2",
+    "cz": "^1.1.9",
     "date-fns": "^2.30.0",
     "vitepress-plugin-comment-with-giscus": "^1.1.9"
   },

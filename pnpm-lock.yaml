@@ -8,6 +8,9 @@ dependencies:
   '@jcamp/tailwindcss-plugin-icons':
     specifier: ^0.6.2
     version: 0.6.2(tailwindcss@3.3.3)
+  cz:
+    specifier: ^1.1.9
+    version: 1.2.0
   date-fns:
     specifier: ^2.30.0
     version: 2.30.0
@@ -1435,6 +1438,10 @@ packages:
 
   /csstype@3.1.2:
     resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==}
+
+  /cz@1.2.0:
+    resolution: {integrity: sha512-tgczE3o78rD7WZEw16XQwW8jdaOAKetnovXB/a+XhRGUixSVPmJJylz8/0cbPvo9sZrStGmNDOb9AhiAxh07og==}
+    dev: false
 
   /dargs@7.0.0:
     resolution: {integrity: sha512-2iy1EkLdlBzQGvbweYRFxmFath8+K7+AKB0TlhHWkNuH+TmovaMH/Wp7V7R4u7f4SnX3OgLsU9t1NI9ioDnUpg==}

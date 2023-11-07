@@ -14,12 +14,11 @@ export default {
         giscusTalk({
                 repo: 'chunge16/vitepress-blogs',
                 repoId: 'R_kgDOKFcWWg',
-                category: 'Announcements', // 默认: `General`
-                categoryId: 'IC_kwDOKFcWWs4Cav-V',
-                mapping: 'pathname', // 默认: `pathname`
-                inputPosition: 'top', // 默认: `top`
-                lang: 'zh-CN', // 默认: `zh-CN`
-                // ...
+                category: 'General',
+                categoryId: 'DIC_kwDOKFcWWs4Cav-W',
+                mapping: 'pathname', // default: `pathname`
+                inputPosition: 'top', // default: `top`
+                lang: 'zh-CN', // default: `zh-CN`
             }, {
                 frontmatter, route
             },
