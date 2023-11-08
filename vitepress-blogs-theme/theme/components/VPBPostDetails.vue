@@ -18,7 +18,7 @@ const { post } = usePosts()
     <span
       class="bg-primary-100 inline-flex items-center rounded text-sm font-medium"
     >
-      <VPBPostCategory :category="post.category" />
+      <VPBPostCategory :category="post?.category" />
     </span>
   </div>
   <VPBPostAuthor inside-doc />

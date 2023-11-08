@@ -16,7 +16,7 @@ defineProps<{
       <span
         class="bg-primary-100 inline-flex items-center rounded text-sm font-medium text-[color:var(--vp-c-brand-light)] dark:text-[color:var(--vp-c-brand-dark)]"
       >
-        <VPBPostCategory :category="post.category">
+        <VPBPostCategory :category="post?.category">
           <span class="text-sm">{{ post.date.since }}</span>
         </VPBPostCategory>
       </span>

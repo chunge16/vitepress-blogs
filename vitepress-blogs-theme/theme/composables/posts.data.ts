@@ -16,10 +16,10 @@ export default createContentLoader(pattern, {
                 author: frontmatter.author ?? blogConfig?.defaultAuthor ?? 'Unknown',
                 url,
                 excerpt,
-                tags: formatTags(frontmatter.tags),
+                tags: formatTags(frontmatter?.tags),
                 category:
-                    frontmatter.category ?? blogConfig?.defaultCategory ?? 'Article',
-                date: formatDate(frontmatter.date),
+                    frontmatter?.category ?? blogConfig?.defaultCategory ?? 'Article',
+                date: formatDate(frontmatter?.date),
             }))
             .sort((a, b) => b.date.time - a.date.time)
     },

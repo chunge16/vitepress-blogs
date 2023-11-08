@@ -13,9 +13,9 @@ console.log('theme', theme.blog?.categoryIcons);
     <div
       v-if="
         theme.blog?.categoryIcons &&
-        theme.blog.categoryIcons[category.toLowerCase()]
+        theme.blog?.categoryIcons[category.toLowerCase()]
       "
-      :class="theme.blog.categoryIcons[category.toLowerCase()]"
+      :class="theme.blog?.categoryIcons[category.toLowerCase()]"
       class="mr-2"
     />
     <span>{{ category }}</span>
