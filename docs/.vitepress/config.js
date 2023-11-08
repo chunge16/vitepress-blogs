@@ -7,7 +7,17 @@ export default defineConfig({
   title: "春哥的博客",
   description: "行到水穷处，坐看云起时",
   head: [
-    ['link', { rel: 'icon', href: '/cat-with-wry-smile.svg' }],
+    ['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }],
+    ['meta', { name: 'keywords', content: 'keywords' }],
+    ['meta', { name: 'author', content: '春哥' }],
+    ['meta', { property: 'og:type', content: 'article' }],
+    ['meta', { name: 'application-name', content: 'name' }],
+    ['meta', { name: 'apple-mobile-web-app-title', content: 'name' }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'default' }],
+
+    ['link', { rel: 'shortcut icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+
   ],
   themeConfig: {
     search: {
