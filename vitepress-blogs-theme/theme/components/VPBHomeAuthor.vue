@@ -18,9 +18,9 @@ const author = computed(() => {
 <template>
   <div v-if="author" class="flex items-center space-x-4">
     <img
-      v-if="author.avatar"
+      v-if="author?.avatar"
       class="h-7 w-7 rounded-full"
-      :src="author.avatar"
+      :src="author?.avatar"
       :alt="author.name"
     />
     <img
