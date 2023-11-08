@@ -10,6 +10,14 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/cat-with-wry-smile.svg' }],
   ],
   themeConfig: {
+    search: {
+      provider: 'algolia',
+      options: {
+        appId: 'XWQOSQ1EBO',
+        apiKey: 'ba5f7ee8c7f40ed8c9fd2044e5516c10',
+        indexName: 'chunge16vitepress'
+      }
+    },
     logo: '/cat-with-wry-smile.svg',
     lastUpdated: true,
     // https://vitepress.dev/reference/default-theme-config
