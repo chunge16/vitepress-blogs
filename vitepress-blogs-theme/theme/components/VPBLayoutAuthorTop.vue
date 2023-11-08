@@ -9,8 +9,8 @@ const { author, prevAuthor, nextAuthor } = useAuthors();
   <div>
     <div class="mb-1 flex items-center justify-between text-gray-500">
       <img
-        v-if="author.gravatar"
-        :src="`https://gravatar.com/avatar/${author.gravatar}`"
+        v-if="author?.gravatar"
+        :src="`https://gravatar.com/avatar/${author?.gravatar}`"
         alt="author image"
         class="h-20 w-20 rounded-full"
       />

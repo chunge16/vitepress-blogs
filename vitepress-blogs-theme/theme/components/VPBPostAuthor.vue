@@ -28,8 +28,8 @@ const author = computed(() => {
       >
         <li v-if="author" class="flex items-center space-x-2">
           <img
-            v-if="author.gravatar"
-            :src="`https://gravatar.com/avatar/${author.gravatar}`"
+            v-if="author?.gravatar"
+            :src="`https://gravatar.com/avatar/${author?.gravatar}`"
             alt="author image"
             class="h-10 w-10 rounded-full"
           />

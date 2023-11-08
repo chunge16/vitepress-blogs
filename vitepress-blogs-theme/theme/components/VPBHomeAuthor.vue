@@ -24,9 +24,9 @@ const author = computed(() => {
       :alt="author.name"
     />
     <img
-      v-else-if="author.gravatar"
+      v-else-if="author?.gravatar"
       class="h-7 w-7 rounded-full"
-      :src="`https://gravatar.com/avatar/${author.gravatar}`"
+      :src="`https://gravatar.com/avatar/${author?.gravatar}`"
       :alt="author.name"
     />
     <a
