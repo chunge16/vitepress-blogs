@@ -46,13 +46,13 @@ const author = computed(() => {
                 :href="author.url"
                 class="text-lg text-gray-900 hover:text-[color:var(--vp-c-brand-light)] dark:text-white dark:hover:text-[color:var(--vp-c-brand-dark)]"
               >
-                {{ author.name }}
+                {{ author?.name }}
               </a>
             </dd>
-            <dt v-if="author.twitter" class="sr-only">Twitter</dt>
-            <dd v-if="author.twitter">
+            <dt v-if="author?.twitter" class="sr-only">Twitter</dt>
+            <dd v-if="author?.twitter">
               <a
-                :href="`https://twitter.com/${author.twitter}`"
+                :href="`https://twitter.com/${author?.twitter}`"
                 target="_blank"
                 rel="noopener noreferrer"
                 >@{{ author.twitter }}</a

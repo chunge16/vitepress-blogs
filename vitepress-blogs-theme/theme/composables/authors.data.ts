@@ -12,7 +12,7 @@ export default createContentLoader(pattern, {
   transform(raw) {
     return raw
       .map(({ url, frontmatter, excerpt }) => ({
-        name: frontmatter.name,
+        name: frontmatter?.name,
         avatar: frontmatter?.avatar ?? null,
         gravatar: frontmatter?.gravatar ?? null,
         twitter: frontmatter?.twitter ?? null,

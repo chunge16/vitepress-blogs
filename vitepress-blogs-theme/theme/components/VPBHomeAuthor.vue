@@ -11,7 +11,7 @@ const { site } = useData()
 
 const { findByName } = useAuthors()
 const author = computed(() => {
-  return findByName(props.name)
+  return findByName(props?.name)
 })
 </script>
 
@@ -21,19 +21,19 @@ const author = computed(() => {
       v-if="author?.avatar"
       class="h-7 w-7 rounded-full"
       :src="author?.avatar"
-      :alt="author.name"
+      :alt="author?.name"
     />
     <img
       v-else-if="author?.gravatar"
       class="h-7 w-7 rounded-full"
       :src="`https://gravatar.com/avatar/${author?.gravatar}`"
-      :alt="author.name"
+      :alt="author?.name"
     />
     <a
       :href="author.url"
       class="inline-flex items-center font-medium hover:text-[color:var(--vp-c-brand-dark)]"
       ><span class="font-medium dark:text-white">
-        {{ author.name }}
+        {{ author?.name }}
       </span>
     </a>
   </div>

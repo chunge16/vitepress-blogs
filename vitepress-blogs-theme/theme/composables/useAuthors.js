@@ -8,7 +8,7 @@ export function useAuthors() {
   const path = route.path;
 
   function findByName(name){
-    return authors.find((p) => p.name === name);
+    return authors.find((p) => p?.name === name);
   }
 
   function findCurrentIndex() {

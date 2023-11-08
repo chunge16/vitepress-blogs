@@ -23,7 +23,7 @@ const { author, prevAuthor, nextAuthor } = useAuthors();
       <span
         class="ml-4 text-4xl text-[color:var(--vp-c-brand-light)] dark:text-[color:var(--vp-c-brand-dark)]"
       >
-        {{ author.name }}
+        {{ author?.name }}
       </span>
     </div>
     <div class="mt-4 flex items-center justify-between text-gray-500">
