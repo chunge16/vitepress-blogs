@@ -84,7 +84,9 @@ export default defineConfig({
         'web development': 'i-[carbon/development]',
         html: 'i-[logos/html-5]',
         git: 'i-[logos/git-icon]',
-        vite: 'i-[logos/vitejs]'
+        vite: 'i-[logos/vitejs]',
+        locked: 'i-[twemoji/locked]',
+        react: 'i-[logos/react]',
       },
     },
     socialLinks: [
