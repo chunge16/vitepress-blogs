@@ -71,7 +71,8 @@ echo 'congratulations! You throw that shit!';
 
 **卸载的核心点就是把该软件相关东西都删除**
 
-**这个监控软件其实就是靠着 plist 这几个文件实现无限自启的，一般基本上通过vim编辑plist后，重启这个软件就不会自启了，这个时候删不删也无所谓了，主要看dvc-xxx-xxx这个前缀的进程在进程管理里面是否存在就行。**
+
+**这个监控软件其实就是靠着 plist 这几个文件实现无限自启的，一般基本上通过 [vim编辑plist](#vim) 后，重启这个软件就不会自启了，这个时候删不删也无所谓了，主要看dvc-xxx-xxx这个前缀的进程在进程管理里面是否存在就行。**
 
 
 ::: tip 提示
@@ -89,7 +90,7 @@ echo 'congratulations! You throw that shit!';
 你要在执行前成功连接过一次WIFI，简单来说就是 LVSecurityAgent 成功连接过一次
 :::
 
-### 第一步：关掉软件自动启动
+### 第一步：关掉软件自动启动 
 
 **设置里面搜索登录项把箭头的几个全部关掉**
 
@@ -101,7 +102,7 @@ echo 'congratulations! You throw that shit!';
 
 ![登录项](/LVSecurityAgent/img_4.png)
 
-**用Vim分别执行下面的命令**
+#### 用Vim分别执行下面的命令 {#vim}
 ```shell
 # Vim分别执行每个文件，修改里面的内容（就是一个一个的改）
 # 下面的如果找不到文件请在用户目录下查看也就是 ~/Library/
