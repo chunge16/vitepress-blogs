@@ -46,13 +46,16 @@ tags:
 ```shell
 echo 'delete shit.app..need your root pwd';
 sudo rm -rf /Applications/LVSecurityAgent.app;
+sudo rm -rf /Applications/dvc-manageproxy-exe.app
 echo 'script is fighting...';
 # 这流氓软件会把该文件夹锁定，无法直接rm删除，所以要先改变文件夹属性解锁
 sudo chflags noschg /opt/LVUAAgentInstBaseRoot; 
-sudo chflags noschg /opt/LVUAAgentInstBaseRoot/face;
-sudo chflags noschg /opt/LVUAAgentInstBaseRoot/web;
 echo 'delete shit.datafile..';
 sudo rm -rf /opt/LVUAAgentInstBaseRoot;
+sudo rm -rf /Library/LaunchAgents/com.lvmagent.gui.plist
+sudo rm -rf /Library/LaunchAgents/com.leagsoft.uniremote.plist
+sudo rm -rf /Library/LaunchDaemons/com.lvmagent.core.plist
+sudo rm -rf /Library/LaunchDaemons/com.lvmagent.filemonitor.plist
 echo 'kill shit.process..';
 sudo ps -ef|grep -E 'LVUAAgentInstBaseRoot|dvc-manageproxy-exe' |grep -v "grep"|awk '{print $2}'|xargs sudo kill -9;
 echo 'congratulations! You throw that shit!';
@@ -66,10 +69,16 @@ echo 'congratulations! You throw that shit!';
 
 然后再执行 `./script_of_justice.sh` 来调用脚本。
 
+**卸载的核心点就是把该软件相关东西都删除**
+
+**这个监控软件其实就是靠着 plist 这几个文件实现无限自启的，一般基本上通过vim编辑plist后，重启这个软件就不会自启了，这个时候删不删也无所谓了，主要看dvc-xxx-xxx这个前缀的进程在进程管理里面是否存在就行。**
+
 
 ::: tip 提示
 这软件有正常卸载办法，但是需要管理员提供动态验证码给你，你离职的话正常都给你。
 :::
+
+脚本执行成功后，重启电脑，看看任务执行器还有 dvc-xxx-xxx 的进程吗，如果没有就说明删除成功了，没有在后台悄悄咪咪无限重启线程
 
 
 ## 如何只是用的时候再会让他运行，不用的时候关闭？
@@ -101,6 +110,9 @@ sudo vim /Library/LaunchAgents/com.lvmagent.gui.plist
 sudo vim /Library/LaunchAgents/com.leagsoft.uniremote.plist
 
 sudo vim /Library/LaunchDaemons/com.lvmagent.core.plist
+
+sudo vim /Library/LaunchDaemons/com.lvmagent.filemonitor.plist
+
 ```
 
 **重点： 将他们的KeepAlive和RunAtLoad设置为false**
