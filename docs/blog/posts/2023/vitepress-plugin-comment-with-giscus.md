@@ -1,11 +1,15 @@
 ---
 date: 2023-11-08
-title: '推荐一个 vitepress 评论插件'
+title: 'vitepress 评论插件 vitepress-plugin-comment-with-giscus'
 category: Document
 tags:
   - vite
   - comment
   - vue
+---
+
+最近寻找一个`vitepess`评论插件，发现了一个不错的插件，分享给大家
+
 ---
 
 ## 1. 背景
