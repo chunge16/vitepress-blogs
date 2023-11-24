@@ -1,7 +1,7 @@
 ---
 date: 2023-11-08
 title: '给 VitePress 添加 algolia 搜索'
-category: Document
+category: Tutorial
 tags:
   - 'web development'
 ---
