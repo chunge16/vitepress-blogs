@@ -87,6 +87,8 @@ export default defineConfig({
         vite: 'i-[logos/vitejs]',
         locked: 'i-[twemoji/locked]',
         react: 'i-[logos/react]',
+        blog: 'i-[carbon/blog]',
+        comment: 'i-[carbon/add-comment]',
       },
     },
     socialLinks: [

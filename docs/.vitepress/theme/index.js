@@ -19,6 +19,8 @@ export default {
                 mapping: 'pathname', // default: `pathname`
                 inputPosition: 'top', // default: `top`
                 lang: 'zh-CN', // default: `zh-CN`
+                lightTheme: 'light', // 默认: `light`
+                darkTheme: 'transparent_dark', // 默认: `transparent_dark`
             }, {
                 frontmatter, route
             },
