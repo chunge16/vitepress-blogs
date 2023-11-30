@@ -1,10 +1,10 @@
 // https://vitepress.dev/guide/custom-theme
 
-import {VPBTheme} from "../../../vitepress-blogs-theme/theme";
+import {VPBTheme} from "@chunge16/vitepress-blogs-theme";
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 import { useData, useRoute } from 'vitepress';
 export default {
-    ...VPBTheme,
+    extends: VPBTheme,
     setup() {
         // 获取前言和路由
         const { frontmatter } = useData();

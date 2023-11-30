@@ -1,5 +1,5 @@
-import { defineConfig } from 'vitepress';
-import {processData} from '../../vitepress-blogs-theme/config/index.js';
+import {defineConfig} from 'vitepress';
+import {processData} from '@chunge16/vitepress-blogs-theme/config';
 // https://vitepress.dev/reference/site-config
 const base = "/vitepress-blogs/";
 export default defineConfig({
@@ -97,7 +97,11 @@ export default defineConfig({
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2023-present chunge'
-    }
+    },
+    outline: {
+      level: "deep",
+      label: "目录"
+    },
   },
   vite: {
     optimizeDeps: {
