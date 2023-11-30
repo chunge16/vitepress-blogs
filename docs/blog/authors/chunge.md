@@ -9,6 +9,7 @@ comment: false
 
 ## 个人信息
 - 姓名：春哥
+- 邮箱: <a href="mailto:chunge1945@outlook.com">chunge1945@outlook.com</a>
 
 
 ## 座右铭
