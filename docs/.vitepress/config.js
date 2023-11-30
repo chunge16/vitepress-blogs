@@ -107,6 +107,9 @@ export default defineConfig({
     optimizeDeps: {
       exclude: ['@chunge16/vitepress-blogs-theme'],
     },
+    ssr: {
+      noExternal: ['@chunge16/vitepress-blogs-theme']
+    },
   },
   async transformPageData(pageData, ctx) {
     await processData(pageData, ctx);
