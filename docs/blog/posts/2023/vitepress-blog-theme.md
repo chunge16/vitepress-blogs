@@ -6,8 +6,13 @@ tags: vite, vue
 
 ---
 
-vitepress自定义主题说明
+基于 vitepress 自定义主题说明
+
 ---
 
-[README.md](https://github.com/chunge16/vitepress-blogs-theme/blob/main/README.md )
+## <div class="i-[carbon/document]" /> 文档
 
+[@chunge16/vitepress-blogs-theme](https://chunge16.github.io/vitepress-blogs-theme/)
+## <div class="i-[logos/github-icon]" />
+
+[github](https://github.com/chunge16/vitepress-blogs-theme)
