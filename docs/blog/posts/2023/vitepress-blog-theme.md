@@ -9,4 +9,5 @@ tags: vite, vue
 vitepress自定义主题说明
 ---
 
-<!--@include: ../../../../vitepress-blogs-theme/README.md-->
+[README.md](https://github.com/chunge16/vitepress-blogs-theme/blob/main/README.md )
+
