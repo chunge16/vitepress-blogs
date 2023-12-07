@@ -56,6 +56,7 @@ sudo rm -rf /Library/LaunchAgents/com.lvmagent.gui.plist
 sudo rm -rf /Library/LaunchAgents/com.leagsoft.uniremote.plist
 sudo rm -rf /Library/LaunchDaemons/com.lvmagent.core.plist
 sudo rm -rf /Library/LaunchDaemons/com.lvmagent.filemonitor.plist
+sudo rm -rf /Library/LaunchAgents/com.lvmagent.screen.plist
 echo 'kill shit.process..';
 sudo ps -ef|grep -E 'LVUAAgentInstBaseRoot|dvc-manageproxy-exe' |grep -v "grep"|awk '{print $2}'|xargs sudo kill -9;
 echo 'congratulations! You throw that shit!';
@@ -113,6 +114,8 @@ sudo vim /Library/LaunchAgents/com.leagsoft.uniremote.plist
 sudo vim /Library/LaunchDaemons/com.lvmagent.core.plist
 
 sudo vim /Library/LaunchDaemons/com.lvmagent.filemonitor.plist
+
+sudo vim /Library/LaunchAgents/com.lvmagent.screen.plist
 
 ```
 
