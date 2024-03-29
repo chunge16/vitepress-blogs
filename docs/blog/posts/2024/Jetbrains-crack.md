@@ -9,7 +9,7 @@ tags:
 
 
 
-如何使用`ja-netfilter`使用收费软件 `jetbrains`软件
+如何使用`ja-netfilter`破解在线激活验证 `JetBrains` 系列软件
 
 ---
 
