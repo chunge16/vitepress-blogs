@@ -12,13 +12,13 @@ dependencies:
     specifier: ^2.30.0
     version: 2.30.0
   vitepress-plugin-comment-with-giscus:
-    specifier: ^1.1.10
-    version: 1.1.10(vue@3.3.9)
+    specifier: ^1.1.11
+    version: 1.1.11(vue@3.3.9)
 
 devDependencies:
   '@chunge16/vitepress-blogs-theme':
     specifier: ^0.1.14
-    version: 0.1.15(postcss@8.4.31)(ts-node@10.9.1)(typescript@5.3.2)(vitepress@1.0.0-rc.31)
+    version: 0.1.15(postcss@8.4.32)(ts-node@10.9.1)(typescript@5.3.2)(vitepress@1.0.0-rc.31)
   '@commitlint/cli':
     specifier: ^17.7.1
     version: 17.8.1
@@ -36,7 +36,7 @@ devDependencies:
     version: 1.1.14
   autoprefixer:
     specifier: ^10.4.14
-    version: 10.4.16(postcss@8.4.31)
+    version: 10.4.16(postcss@8.4.32)
   eslint:
     specifier: ^8.48.0
     version: 8.54.0
@@ -57,7 +57,7 @@ devDependencies:
     version: 3.3.5(ts-node@10.9.1)
   vitepress:
     specifier: 1.0.0-rc.31
-    version: 1.0.0-rc.31(@types/node@20.5.1)(postcss@8.4.31)(typescript@5.3.2)
+    version: 1.0.0-rc.31(@types/node@20.5.1)(postcss@8.4.32)(typescript@5.3.2)
   vue:
     specifier: ^3.3.4
     version: 3.3.9(typescript@5.3.2)
@@ -274,16 +274,16 @@ packages:
       '@babel/helper-validator-identifier': 7.22.20
       to-fast-properties: 2.0.0
 
-  /@chunge16/vitepress-blogs-theme@0.1.15(postcss@8.4.31)(ts-node@10.9.1)(typescript@5.3.2)(vitepress@1.0.0-rc.31):
+  /@chunge16/vitepress-blogs-theme@0.1.15(postcss@8.4.32)(ts-node@10.9.1)(typescript@5.3.2)(vitepress@1.0.0-rc.31):
     resolution: {integrity: sha512-BHckR3R5PCF59KYIKzcvh4NMZRQCykznpM7BxvYg8pL26mV8EpgkWIdMIRCtSDaTHt6ZW5La85UpKu22uVK+8g==}
     peerDependencies:
       vitepress: ^1.0.0-rc.31
     dependencies:
       '@iconify-json/carbon': 1.1.23
       '@iconify-json/logos': 1.1.40
-      autoprefixer: 10.4.16(postcss@8.4.31)
+      autoprefixer: 10.4.16(postcss@8.4.32)
       tailwindcss: 3.3.5(ts-node@10.9.1)
-      vitepress: 1.0.0-rc.31(@types/node@20.5.1)(postcss@8.4.31)(typescript@5.3.2)
+      vitepress: 1.0.0-rc.31(@types/node@20.5.1)(postcss@8.4.32)(typescript@5.3.2)
       vue: 3.3.9(typescript@5.3.2)
     transitivePeerDependencies:
       - postcss
@@ -1327,7 +1327,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /autoprefixer@10.4.16(postcss@8.4.31):
+  /autoprefixer@10.4.16(postcss@8.4.32):
     resolution: {integrity: sha512-7vd3UC6xKp0HLfua5IjZlcXvGAGy7cBAXTg2lyQ/8WpNhd6SiZ8Be+xm3FyBSYJx5GKcpRCzBh7RH4/0dnY+uQ==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
@@ -1339,7 +1339,7 @@ packages:
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.0.0
-      postcss: 8.4.31
+      postcss: 8.4.32
       postcss-value-parser: 4.2.0
     dev: true
 
@@ -2971,6 +2971,15 @@ packages:
       picocolors: 1.0.0
       source-map-js: 1.0.2
 
+  /postcss@8.4.32:
+    resolution: {integrity: sha512-D/kj5JNu6oo2EIy+XL/26JEDTlIbB8hw85G8StOE6L74RQAVVP5rej6wxCNqyMbR4RkPfqvezVbPw81Ngd6Kcw==}
+    engines: {node: ^10 || ^12 || >=14}
+    dependencies:
+      nanoid: 3.3.7
+      picocolors: 1.0.0
+      source-map-js: 1.0.2
+    dev: true
+
   /preact@10.19.2:
     resolution: {integrity: sha512-UA9DX/OJwv6YwP9Vn7Ti/vF80XL+YA5H2l7BpCtUr3ya8LWHFzpiO5R+N7dN16ujpIxhekRFuOOF82bXX7K/lg==}
     dev: true
@@ -3602,15 +3611,15 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vitepress-plugin-comment-with-giscus@1.1.10(vue@3.3.9):
-    resolution: {integrity: sha512-xqkORWt5oQSaMCwehj2AvLjjDrilWV723MjipbCwZrI5HcxnA3Zb7InZF7cRvKNWxZm8q0MJ49wosioBLXhVKw==}
+  /vitepress-plugin-comment-with-giscus@1.1.11(vue@3.3.9):
+    resolution: {integrity: sha512-k2xWxCGZWBrLxC+C3OC7+LAq9nkYpulVTW0UNxS0Jq9sf568n4Tel0ufYn3MK1rxG6i4qYpKCiTeOORF7wbk8w==}
     dependencies:
       '@giscus/vue': 2.3.0(vue@3.3.9)
     transitivePeerDependencies:
       - vue
     dev: false
 
-  /vitepress@1.0.0-rc.31(@types/node@20.5.1)(postcss@8.4.31)(typescript@5.3.2):
+  /vitepress@1.0.0-rc.31(@types/node@20.5.1)(postcss@8.4.32)(typescript@5.3.2):
     resolution: {integrity: sha512-ikH9pIjOOAbyoYAGBVfTz8TzuXp+UoWaIRMU4bw/oiTg8R65SbAaGKY84xx6TuL+f4VqUJ8lhzW82YyxSLvstA==}
     hasBin: true
     peerDependencies:
@@ -3633,7 +3642,7 @@ packages:
       mark.js: 8.11.1
       minisearch: 6.3.0
       mrmime: 1.0.1
-      postcss: 8.4.31
+      postcss: 8.4.32
       shikiji: 0.7.5
       shikiji-transformers: 0.7.5
       vite: 5.0.4(@types/node@20.5.1)
