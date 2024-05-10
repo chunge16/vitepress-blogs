@@ -89,6 +89,18 @@ export default defineConfig({
         blog: 'i-[carbon/blog]',
         comment: 'i-[carbon/add-comment]',
       },
+      giscus: {
+        repo: 'chunge16/vitepress-blogs',
+        repoId: 'R_kgDOKFcWWg',
+        category: 'General',
+        categoryId: 'DIC_kwDOKFcWWs4Cav-W',
+        mapping: 'pathname', // default: `pathname`
+        inputPosition: 'top', // default: `top`
+        lang: 'zh-CN', // default: `zh-CN`
+        lightTheme: 'light', // 默认: `light`
+        darkTheme: 'transparent_dark', // 默认: `transparent_dark`
+        defaultEnable: true, // 默认： true
+      }
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/chunge16/vitepress-blogs/tree/main/vitepress-blogs-theme' }
