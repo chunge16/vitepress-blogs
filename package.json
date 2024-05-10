@@ -10,7 +10,7 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@chunge16/vitepress-blogs-theme": "^0.2.2",
+    "@chunge16/vitepress-blogs-theme": "^0.2.3",
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
     "@iconify-json/carbon": "^1.1.19",
