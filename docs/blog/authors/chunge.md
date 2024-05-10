@@ -1,6 +1,6 @@
 ---
 name: chunge
-avatar: /vitepress-blogs/cat-avatar.png
+avatar: /cat-avatar.png
 comment: false
 ---
 
@@ -14,3 +14,4 @@ comment: false
 
 ## 座右铭
 开拓视野，冲破艰险，洞悉所有，贴近生活，寻找真爱，感受彼此， 这就是人生的目的
+Ï

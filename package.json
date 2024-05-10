@@ -3,6 +3,7 @@
   "type": "module",
   "scripts": {
     "docs:dev": "vitepress dev docs",
+    "docs:build:github": "vitepress build docs --base=/vitepress-blogs/",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "lint:eslint": "eslint . --ext .ts,.js,.vue --fix",

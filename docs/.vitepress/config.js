@@ -1,9 +1,8 @@
 import {defineConfig} from 'vitepress';
 import {processData} from '@chunge16/vitepress-blogs-theme/config';
 // https://vitepress.dev/reference/site-config
-const base = "/vitepress-blogs/";
+const currentYear = new Date().getFullYear();
 export default defineConfig({
-  base,
   cleanUrls: true,
   title: "春哥的博客",
   description: "行到水穷处，坐看云起时",
@@ -16,8 +15,8 @@ export default defineConfig({
     ['meta', { name: 'apple-mobile-web-app-title', content: 'name' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'default' }],
 
-    ['link', { rel: 'shortcut icon', href: `${base}cat-with-wry-smile.svg` }],
-    ['link', { rel: 'icon', type: 'image/x-icon', href: `${base}cat-with-wry-smile.svg` }],
+    ['link', { rel: 'shortcut icon', href: `cat-with-wry-smile.svg` }],
+    ['link', { rel: 'icon', type: 'image/x-icon', href: `cat-with-wry-smile.svg` }],
 
   ],
   themeConfig: {
@@ -96,7 +95,7 @@ export default defineConfig({
     ],
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2023-present chunge'
+      copyright: `Copyright © 2023-${currentYear} chunge`
     },
     outline: {
       level: "deep",
