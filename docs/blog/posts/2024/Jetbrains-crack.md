@@ -7,11 +7,13 @@ tags:
   - locked
 ---
 
-
-
 如何使用`ja-netfilter`破解在线激活验证 `JetBrains` 系列软件
 
----
+:tada: **Jetbrains 宣布 WebStorm 和 Rider 对非商业用途免费开放 [原文地址](https://blog.jetbrains.com/blog/2024/10/24/webstorm-and-rider-are-now-free-for-non-commercial-use/)**
+
+当然其他 **jetbrains** 其他 IDE 还是可以继续使用该方法破解使用
+
+
 
 ## 1. 背景
 换了新电脑，下载最新版的 `Webstorm` IDE，准备继续当我的页面仔，发现之前的破解方法不管用，于是上网看各种方法，有点恶心我了，本来利用大佬开源项目`ja-netfilter`可以简单解决 `jetbrains`在线激活验证问题。
