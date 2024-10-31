@@ -9,9 +9,11 @@ tags:
 
 如何使用`ja-netfilter`破解在线激活验证 `JetBrains` 系列软件
 
-:tada: **Jetbrains 宣布 WebStorm 和 Rider 对非商业用途免费开放 [原文地址](https://blog.jetbrains.com/blog/2024/10/24/webstorm-and-rider-are-now-free-for-non-commercial-use/)**
+---
 
-当然其他 **jetbrains** 其他 IDE 还是可以继续使用该方法破解使用
+
+
+:tada: **Jetbrains 宣布 WebStorm 和 Rider 对非商业用途免费开放 [^原文]**  :call_me_hand:
 
 
 
@@ -164,9 +166,11 @@ chmod 755 install.sh
 - 激活成功后，不要随便升级 `JetBrains` 系列软件版本，官方反制手段越来越严厉，可能升级后，无法再免费激活
 - 激活成功后，不要删除或者移动 `/jetbra` 文件夹，否则 IDE找不到参数配置的路径
 
----
 
 ## 参考
 - [介绍一个”牛逼闪闪”开源库：ja-netfilter](https://zhile.io/2021/11/29/ja-netfilter-javaagent-lib.html)
 - [jetbra](https://3.jetbra.in/)
 - [Webstorm 2023.3.4 最新激活码,破解版安装教程（亲测有效~）](https://www.quanxiaoha.com/webstorm-pojie/webstorm-pojie-202334.html#%E6%BF%80%E6%B4%BB%E6%88%90%E5%8A%9F%E5%90%8E%EF%BC%8C%E4%B8%8D%E8%A6%81%E5%8D%87%E7%BA%A7-webstorm-%E7%89%88%E6%9C%AC)
+- [WebStorm and Rider Are Now Free for Non-Commercial Use](https://blog.jetbrains.com/blog/2024/10/24/webstorm-and-rider-are-now-free-for-non-commercial-use/)
+
+[^原文]: https://blog.jetbrains.com/blog/2024/10/24/webstorm-and-rider-are-now-free-for-non-commercial-use/
