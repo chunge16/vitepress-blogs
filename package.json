@@ -6,8 +6,11 @@
     "docs:build:github": "vitepress build docs --base '/vitepress-blogs/'",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
-    "lint:eslint": "eslint . --ext .ts,.js,.vue --fix",
-    "prepare": "husky install"
+    "lint": "eslint . --ext .ts,.js,.vue",
+    "lint:fix": "eslint . --ext .ts,.js,.vue --fix",
+    "lint:eslint": "pnpm lint:fix",
+    "check": "pnpm lint && pnpm docs:build",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
@@ -29,7 +32,7 @@
   },
   "lint-staged": {
     "*.{cjs,js,ts,vue}": [
-      "npm run lint:eslint"
+      "pnpm lint:fix"
     ]
   },
   "pnpm": {

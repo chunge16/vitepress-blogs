@@ -3,6 +3,7 @@
 import { VPBTheme } from '@chunge16/vitepress-blogs-theme';
 import { watchEffect } from 'vue';
 import { inBrowser, useData } from 'vitepress';
+import { syncLanguageCookie } from './utils/cookies.js';
 import './style.css';
 
 export default {
@@ -15,7 +16,7 @@ export default {
         return;
       }
 
-      document.cookie = `nf_lang=${lang.value}; max-age=31536000; path=/`;
+      syncLanguageCookie(lang.value);
     });
   },
 };
