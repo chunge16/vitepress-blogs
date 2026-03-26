@@ -1,5 +1,6 @@
-import {defineConfig} from 'vitepress';
-import {processData} from '@chunge16/vitepress-blogs-theme/config';
+import tailwindcss from '@tailwindcss/vite';
+import { defineConfig } from 'vitepress';
+import { processData } from '@chunge16/vitepress-blogs-theme/config';
 // https://vitepress.dev/reference/site-config
 const currentYear = new Date().getFullYear();
 export default defineConfig({
@@ -72,22 +73,22 @@ export default defineConfig({
       description: 'All these articles were written by chunge!',
       defaultAuthor: 'chunge',
       categoryIcons: {
-        article: 'i-[carbon/notebook]',
-        tutorial: 'i-[carbon/book]',
-        document: 'i-[carbon/document]',
+        article: 'i-[carbon--notebook]',
+        tutorial: 'i-[carbon--book]',
+        document: 'i-[carbon--document]',
       },
       tagIcons: {
-        github: 'i-[carbon/logo-github]',
-        vue: 'i-[logos/vue]',
-        javascript: 'i-[logos/javascript]',
-        'web development': 'i-[carbon/development]',
-        html: 'i-[logos/html-5]',
-        git: 'i-[logos/git-icon]',
-        vite: 'i-[logos/vitejs]',
-        locked: 'i-[twemoji/locked]',
-        react: 'i-[logos/react]',
-        blog: 'i-[carbon/blog]',
-        comment: 'i-[carbon/add-comment]',
+        github: 'i-[carbon--logo-github]',
+        vue: 'i-[logos--vue]',
+        javascript: 'i-[logos--javascript]',
+        'web development': 'i-[carbon--development]',
+        html: 'i-[logos--html-5]',
+        git: 'i-[logos--git-icon]',
+        vite: 'i-[logos--vitejs]',
+        locked: 'i-[carbon--locked]',
+        react: 'i-[logos--react]',
+        blog: 'i-[carbon--blog]',
+        comment: 'i-[carbon--add-comment]',
       },
       giscus: {
         repo: 'chunge16/vitepress-blogs',
@@ -115,6 +116,7 @@ export default defineConfig({
     },
   },
   vite: {
+    plugins: [tailwindcss()],
     optimizeDeps: {
       exclude: ['@chunge16/vitepress-blogs-theme'],
     },
@@ -128,7 +130,7 @@ export default defineConfig({
 });
 
 
-function sidebarCasualEssay(){
+function sidebarCasualEssay() {
   return [
     {
       text: '滚石爱情故事集',
