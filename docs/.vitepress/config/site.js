@@ -35,12 +35,15 @@ const blogTagIcons = {
   vue: 'i-[logos--vue]',
   javascript: 'i-[logos--javascript]',
   'web development': 'i-[carbon--development]',
+  codex: 'i-[carbon--code]',
+  ai: 'i-[carbon--machine-learning-model]',
   html: 'i-[logos--html-5]',
   git: 'i-[logos--git-icon]',
   vite: 'i-[logos--vitejs]',
   locked: 'i-[carbon--locked]',
   react: 'i-[logos--react]',
   blog: 'i-[carbon--blog]',
+  tutorial: 'i-[carbon--book]',
   comment: 'i-[carbon--add-comment]',
 };
 

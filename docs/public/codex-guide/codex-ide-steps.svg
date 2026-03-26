@@ -1,0 +1,13 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" fill="#FFF6EA"/>
+  <rect x="56" y="56" width="1088" height="648" rx="32" fill="#FFFFFF"/>
+  <text x="94" y="126" fill="#1D3557" font-size="44" font-family="Arial, sans-serif" font-weight="800">IDE 插件快速上手 4 步</text>
+  <rect x="94" y="180" width="1012" height="92" rx="22" fill="#FFD66B"/>
+  <text x="130" y="238" fill="#1D3557" font-size="34" font-family="Arial, sans-serif" font-weight="700">1. 在 VS Code / Cursor / JetBrains 安装 Codex 插件</text>
+  <rect x="94" y="300" width="1012" height="92" rx="22" fill="#F3A8A2"/>
+  <text x="130" y="358" fill="#1D3557" font-size="34" font-family="Arial, sans-serif" font-weight="700">2. 打开侧边栏里的 Codex 面板并登录账号</text>
+  <rect x="94" y="420" width="1012" height="92" rx="22" fill="#DCEBFF"/>
+  <text x="130" y="478" fill="#1D3557" font-size="34" font-family="Arial, sans-serif" font-weight="700">3. 选中当前项目，让它读取上下文后开始协作</text>
+  <rect x="94" y="540" width="1012" height="92" rx="22" fill="#1D3557"/>
+  <text x="130" y="598" fill="#FFFDF8" font-size="34" font-family="Arial, sans-serif" font-weight="700">4. 直接提需求：解释、定位、修改、审查都可以</text>
+</svg>

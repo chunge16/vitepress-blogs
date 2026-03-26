@@ -1,0 +1,27 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" fill="#F7F1E8"/>
+  <rect x="50" y="50" width="1100" height="660" rx="32" fill="#FFFDF8"/>
+  <text x="90" y="120" fill="#1D3557" font-size="44" font-family="Arial, sans-serif" font-weight="800">Codex IDE 插件使用示意</text>
+  <rect x="90" y="170" width="1020" height="470" rx="28" fill="#1D3557"/>
+  <rect x="120" y="204" width="170" height="402" rx="18" fill="#15273F"/>
+  <circle cx="154" cy="242" r="12" fill="#FFD66B"/>
+  <circle cx="154" cy="292" r="12" fill="#F3A8A2"/>
+  <circle cx="154" cy="342" r="12" fill="#DCEBFF"/>
+  <circle cx="154" cy="392" r="12" fill="#FFD66B"/>
+  <rect x="330" y="204" width="410" height="402" rx="18" fill="#203A5E"/>
+  <text x="364" y="258" fill="#FFFDF8" font-size="30" font-family="Arial, sans-serif" font-weight="700">editor</text>
+  <rect x="364" y="290" width="342" height="18" rx="9" fill="#446A99"/>
+  <rect x="364" y="332" width="290" height="18" rx="9" fill="#446A99"/>
+  <rect x="364" y="374" width="318" height="18" rx="9" fill="#446A99"/>
+  <rect x="364" y="416" width="250" height="18" rx="9" fill="#446A99"/>
+  <rect x="364" y="458" width="334" height="18" rx="9" fill="#446A99"/>
+  <rect x="770" y="204" width="306" height="402" rx="18" fill="#FFFDF8"/>
+  <text x="804" y="258" fill="#1D3557" font-size="30" font-family="Arial, sans-serif" font-weight="800">Codex Panel</text>
+  <rect x="804" y="290" width="238" height="54" rx="14" fill="#F6EBDD"/>
+  <text x="828" y="324" fill="#1D3557" font-size="22" font-family="Arial, sans-serif">分析当前文件</text>
+  <rect x="804" y="366" width="238" height="54" rx="14" fill="#F6EBDD"/>
+  <text x="828" y="400" fill="#1D3557" font-size="22" font-family="Arial, sans-serif">解释报错原因</text>
+  <rect x="804" y="442" width="238" height="54" rx="14" fill="#FFD66B"/>
+  <text x="828" y="476" fill="#1D3557" font-size="22" font-family="Arial, sans-serif">直接修改代码</text>
+  <text x="90" y="686" fill="#1D3557" font-size="30" font-family="Arial, sans-serif">适合 VS Code、Cursor、Windsurf、JetBrains，在编辑器里边看边改更顺手。 🧩</text>
+</svg>
