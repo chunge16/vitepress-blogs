@@ -2,6 +2,7 @@
 date: 2026-03-26
 title: 'Codex 安装与使用教程：新手也能快速上手'
 category: document
+commentId: post-2026-codex-install-usage-guide
 tags:
   - blog
   - codex

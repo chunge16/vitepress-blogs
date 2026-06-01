@@ -1,7 +1,8 @@
 ---
 date: 2023-11-08
 title: '给 VitePress 添加 algolia 搜索'
-category: Tutorial
+category: tutorial
+commentId: post-2023-vitepress-algolia
 tags:
   - 'web development'
 ---
@@ -123,8 +124,6 @@ export default defineConfig({
 # 参考
 - [给 VitePress 添加 algolia 搜索](https://chodocs.cn/program/vitepress-algolia/)
 - [Algolia 搜索](https://vitepress.dev/reference/default-theme-search#algolia-search)
-
-
 
 
 

@@ -1,7 +1,8 @@
 ---
 date: 2024-03-29
 title: 'Jetbrains系列破解指南'
-category: Document
+category: document
+commentId: post-2024-jetbrains-guide
 tags:
   - blog
   - locked

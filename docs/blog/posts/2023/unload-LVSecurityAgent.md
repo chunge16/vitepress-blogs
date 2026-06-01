@@ -1,7 +1,8 @@
 ---
 date: 2023-11-22
 title: 'mac电脑 卸载LVSecurityAgent监控软件'
-category: Document
+category: document
+commentId: post-2023-unload-lvsecurityagent
 tags:
   - 'locked'
 ---

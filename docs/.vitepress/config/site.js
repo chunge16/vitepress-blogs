@@ -52,7 +52,7 @@ const giscusConfig = {
   repoId: 'R_kgDOKFcWWg',
   category: 'General',
   categoryId: 'DIC_kwDOKFcWWs4Cav-W',
-  mapping: 'pathname',
+  mapping: 'specific',
   inputPosition: 'top',
   lang: 'zh-CN',
   lightTheme: 'light',
@@ -62,14 +62,15 @@ const giscusConfig = {
 
 export const siteHead = [
   ['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }],
-  ['meta', { name: 'keywords', content: 'keywords' }],
+  ['meta', { name: 'keywords', content: 'vitepress, blog, vue, javascript, codex, ai' }],
   ['meta', { name: 'author', content: '春哥' }],
   ['meta', { property: 'og:type', content: 'article' }],
-  ['meta', { name: 'application-name', content: 'name' }],
-  ['meta', { name: 'apple-mobile-web-app-title', content: 'name' }],
+  ['meta', { property: 'og:site_name', content: siteTitle }],
+  ['meta', { name: 'application-name', content: siteTitle }],
+  ['meta', { name: 'apple-mobile-web-app-title', content: siteTitle }],
   ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'default' }],
-  ['link', { rel: 'shortcut icon', href: 'cat-with-wry-smile.svg' }],
-  ['link', { rel: 'icon', type: 'image/x-icon', href: 'cat-with-wry-smile.svg' }],
+  ['link', { rel: 'shortcut icon', href: siteLogo }],
+  ['link', { rel: 'icon', type: 'image/svg+xml', href: siteLogo }],
 ];
 
 function createNav() {

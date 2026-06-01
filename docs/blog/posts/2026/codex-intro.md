@@ -1,7 +1,8 @@
 ---
 date: 2026-03-26
 title: 'Codex 到底是什么？聊得太真实了'
-category: Document
+category: document
+commentId: post-2026-codex-intro
 tags:
   - blog
   - codex

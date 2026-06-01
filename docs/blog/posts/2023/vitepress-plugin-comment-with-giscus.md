@@ -1,7 +1,8 @@
 ---
 date: 2023-11-24
 title: 'vitepress 评论插件 vitepress-plugin-comment-with-giscus'
-category: Document
+category: document
+commentId: post-2023-vitepress-giscus-plugin
 tags:
   - vite
   - comment

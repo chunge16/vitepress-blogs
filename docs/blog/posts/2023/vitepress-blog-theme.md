@@ -1,8 +1,11 @@
 ---
-date: 2023-08-15 
+date: 2023-08-15
 title: '@chunge16/vitepress-blogs-theme'
-category: Article
-tags: vite, vue
+category: article
+commentId: post-2023-vitepress-blog-theme
+tags:
+  - vite
+  - vue
 
 ---
 

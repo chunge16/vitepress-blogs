@@ -1,7 +1,8 @@
 ---
 date: 2023-08-14
 title: 'Git 提交规范'
-category: Document
+category: document
+commentId: post-2023-git-commit-spec
 tags:
   - git
 ---
@@ -79,8 +80,6 @@ Prefix     | Emoji              | Emoji code            | Commit 说明
 - [老鸟都应该注意的 Git 提交规范](http://www.cnblogs.com/ctaodream/p/6066694.html)
 - [Gitmoji](https://gitmoji.carloscuesta.me/)
 - [Git commit message 和工作流规范](https://cloud.tencent.com/developer/article/1004656)
-
-
 
 
 
