@@ -1,10 +1,9 @@
-import { readFileSync } from 'node:fs';
-import { globSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 
-const POST_FILES = globSync('docs/blog/posts/**/*.md', { cwd: process.cwd() });
-const AUTHOR_FILES = globSync('docs/blog/authors/**/*.md', { cwd: process.cwd() });
-const ESSAY_FILES = globSync('docs/casualEssay/**/*.md', { cwd: process.cwd() });
+const POST_FILES = collectMarkdownFiles('docs/blog/posts');
+const AUTHOR_FILES = collectMarkdownFiles('docs/blog/authors');
+const ESSAY_FILES = collectMarkdownFiles('docs/casualEssay');
 
 const CATEGORY_VALUES = new Set(['article', 'tutorial', 'document']);
 
@@ -75,6 +74,31 @@ function normalizeScalar(value) {
   }
 
   return value;
+}
+
+function collectMarkdownFiles(directory) {
+  const absoluteDirectory = path.join(process.cwd(), directory);
+  return walkDirectory(absoluteDirectory).map((file) => path.relative(process.cwd(), file));
+}
+
+function walkDirectory(directory) {
+  const entries = readdirSync(directory, { withFileTypes: true });
+  const files = [];
+
+  for (const entry of entries) {
+    const entryPath = path.join(directory, entry.name);
+
+    if (entry.isDirectory()) {
+      files.push(...walkDirectory(entryPath));
+      continue;
+    }
+
+    if (entry.isFile() && entry.name.endsWith('.md')) {
+      files.push(entryPath);
+    }
+  }
+
+  return files;
 }
 
 function validatePost(filePath) {
