@@ -2,6 +2,7 @@
 date: 2026-06-02
 title: '看懂英伟达“五层蛋糕”理论，才能看懂这一轮AI行情的真正主线'
 category: article
+commentId: post-2026-nvidia-five-layer-cake-mainline
 tags:
   - blog
   - ai
